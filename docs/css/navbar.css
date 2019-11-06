@@ -1,0 +1,70 @@
+.navbar {
+    background-color: #0066ff;
+    box-shadow: 0 2px 7px #77777777;
+}
+
+body {
+    animation: body-anim 0.7s;
+}
+
+@keyframes body-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar .wrapper > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar h2 span {
+    background-color: #fff;
+    color: #0066ff;
+    padding: 0.2em;
+    border-radius: 0.2em;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.navbar ul li {
+    padding: 1em 0;
+}
+
+.navbar ul li:hover {
+    background-color: #fff;
+}
+
+.navbar ul li:hover > a {
+    color: #0066ff;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
