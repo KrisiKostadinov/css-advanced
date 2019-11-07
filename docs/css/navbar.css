@@ -16,6 +16,11 @@ body {
     }
 }
 
+.navbar .wrapper input,
+.navbar .wrapper label {
+    display: none;
+}
+
 .navbar .wrapper {
     display: flex;
     justify-content: space-between;
@@ -67,4 +72,43 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar .wrapper ul {
+        display: none;
+    }
+
+    .navbar .wrapper label {
+        display: block;
+    }
+
+    .navbar .wrapper h2 {
+        padding: 0.7em 0;
+    }
+
+    .navbar .wrapper input:checked {
+        background-color: #fff;
+    }
+    
+    #check:checked + ul {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        width: 70%;
+        top: 3.7em;
+        background-color: #0066ff;
+        border-radius: 2em;
+        box-shadow: 0 0 20px #77777777;
+    }
+
+    .nav li:hover {
+        background-color: #fff;
+    }
+
+    .nav li:hover a {
+        color: #0066ff;
+    }
 }
